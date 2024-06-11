@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="common/base :: layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+ </head>
+<body>
+<div th:fragment="section">
+    <h1 data-th-text="${name}">Home page</h1>
+    <p class="btn btn-primary">Id: <span th:text="${id}"></span></p>
+</div>
+ </body>
+</html>
